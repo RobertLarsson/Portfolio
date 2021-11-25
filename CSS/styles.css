@@ -1,47 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Gloria+Hallelujah&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Rock+Salt&display=swap');
 
 
+/* --------------------------------------   Nedan kommer header   ---------------------------------------------- */
+
 header {
     display: block;
     overflow: hidden;
-    /* background-color: brown; */
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
-.header-img {
+/* .header-img {
 
     width: 85px;
 
-}
-header img {
+} */
+/* header img {
     display: block;
     width: 85px;
     float: left;
-}
+} */
 
 .header-heading {
     display: block;
     margin: 0px auto 0px auto;
     max-width: 600px;
-    /* background-color: beige; */
-    font-size: 32px;
 }
 
 
 .header-heading h1 {
     font-family: 'Montserrat', sans-serif; 
+    font-size: 62px;
     font-weight: 900;
     text-transform: uppercase;
-    /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin: 0px;
     text-align: center;
     color: rgb(255, 87, 88);
     line-height: 1;
 }
 
+/* --------------------------------------   Nedan kommer navigation  ---------------------------------------------- */
+
 nav{
     display: block;
+    border-bottom: 24px solid rgb(124, 194, 124);
 }
 nav ul {
     font-family: 'Amatic SC', cursive;
@@ -49,6 +52,8 @@ nav ul {
     padding: 0%;
 }
 nav a {
+    font-size: 28px;
+    font-weight: bolder;
     text-decoration: none;
     color: rgb(172, 61, 58);
 }
@@ -63,62 +68,110 @@ nav a {
     padding-right: 10px;
 }
 span {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
+/* --------------------------------------   Nedan kommer content ---------------------------------------------- */
 
-
-
-
-
-/* section {
-    border: 1px solid black;
-    margin: auto;
-    padding: 20px 20px;
+section {   
     text-align: center;
-} */
+}
 
 section div {
-    border: 1px solid purple;
-    height: 200px;
+    height: auto;
+    margin-top: 50px;
+}
+
+.big-text {
+    font-family: 'Permanent Marker', cursive;
+    margin-top: 10px;
+    font-size: 36px;
+}
+.list-text {
+    list-style: none;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.telefon-text {
+    font-family: 'Permanent Marker', cursive;
+    margin-bottom: 50px;
+}
+.welcome-text {
+    font-size: 14px;
+    text-align: center;
+    font-family: 'Gloria Hallelujah', cursive;
+
+}
+.welcome-text p {
+    margin-bottom: 0px;
+}
+.welcome-text span {
+    font-family: 'Permanent Marker', cursive;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
 }
 
 .col {
-    /* border: 1px solid green; */
-    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-
-.squareContainer {
-    display: inline-block;
-    border: 1px solid red;
-    padding: 10px 10px;
-    vertical-align: middle;
-    max-width: 700px;
+.second-right {
+    display: block;
+}
+.top-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.openingHours {
-    font-family: 'Rock Salt', cursive;
-}
-.openingHours-list {
-    list-style: none;
-}
-
-.foodstall-img {
-    width: 300px;
-}
-
-
-.TomKhaGai {
+.col-img {
     width: 150px;
 }
 
-.left {
-    width: 50%;
-    float: left;
+.thaiNoodles-img {
+    animation: bounce;
+    animation-duration: 2s;
 }
 
-.right {
-    margin-left: 50%;
+.spicyShrimp-img {
+    animation: flash;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+
+.mortar-img {
+    animation: rubberBand;
+    animation-duration: 2s;
+    animation-delay: 6s;
+}
+
+.carvedFruit-img {
+    animation: swing;
+    animation-duration: 2s;
+    animation-delay: 9s;
+}
+
+
+.VarmratterMedRis {
+    margin-bottom: 0px;
+}
+h5 {
+    font-family: 'Amatic SC';
+    font-weight: bolder;
+}
+
+/* --------------------------------------   Nedan kommer footer   ---------------------------------------------- */
+
+footer {
+    background-color: rgba(180, 6, 0, 0.6);
+    margin-top: 30px;
+    text-align: center;
 }
