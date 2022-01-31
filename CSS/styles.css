@@ -66,15 +66,20 @@ nav a {
 
 section {   
     text-align: center;
-    color: #747474;
 }
 section div {
     height: auto;
 }
-.row{
-    padding-bottom: 5rem;
+#introduction .row, #projects .row{
     border-bottom: 1px solid rgb(82, 78, 78);
-    padding-top: 2rem;
+    padding-bottom: 5rem;
+    margin: 4rem auto;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .big-text {
@@ -85,54 +90,91 @@ section div {
     font-weight: bold;
 }
 
-.list-text {
-    list-style: none;
-    font-family: 'Krona One', cursive;
-}
-.telefon-text {
-    font-family: 'Krona One', cursive;
-    margin-bottom: 50px;
-}
-.intro-text {
-    font-size: 14px;
-    text-align: center;
-    font-family: 'Krona One', cursive;
 
-}
-.intro-text p {
-    margin-bottom: 0px;
-}
-.intro-text span {
-    font-family: 'Krona One', cursive;
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 16px;
-}
+.big-text p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
 
-.col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#profile-img, .col-img{
+#profile-img{
     height: 300px;
 }
-.second-right {
-    display: block;
-}
-.first-row-right {
-    display: flex;
+
+.first-project {
+    background-color: #289d57a6;
+    padding-top: 7rem;
     justify-content: center;
-    align-items: center;
-}
-.second-left {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
+    margin-bottom: 3rem;
 }
 
+#koket-img{
+    height: auto;
+    width: 824px;
+    max-width: 100%;
+}
+
+.second-project{
+    background-color: #F6E3A6;
+    display: inline-block;
+    padding-top: 3.5rem;
+    min-width: 400px;
+}
+
+#pixer-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    padding-left: 5rem;
+}
+
+.third-project{
+    background-color: #F1DDDD;
+    display: inline-block;
+    padding-top: 3.5rem;
+
+}
+
+#kvittisar-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    padding-left: 5rem;
+
+}
+
+
+.project.big-text {
+    font-family: 'cormorant', cursive;
+    color: #636363;
+    margin-top: 10px;
+    font-size: 36pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p.ingress-text {
+    font-size: 12pt;
+    color: #636363;
+}
 
 /* .thaiNoodles-img {
     animation: bounce;
@@ -158,21 +200,18 @@ section div {
 } */
 
 
-.VarmratterMedRis {
-    margin-bottom: 0px;
-}
-h5 {
-    font-family: 'Krona One' !important;
-    font-weight: bolder;
+#contactForm{
+    max-width: 50rem;
+    margin: 4rem auto;
+
 }
 
 /* --------------------------------------   Nedan kommer footer   ---------------------------------------------- */
 
 footer {
     background-color:rgba(7, 82, 196, 0.75);
-    margin-top: 30px;
+    /* margin-top: 30px; */
     text-align: center;
-    /* font-family: ' "ubuntu', sans-serif; */
     font-size: 10pt;
     font-weight: lighter;
 }
