@@ -7,6 +7,9 @@ body{
 ul {
     list-style-type: none;
 }
+a{
+    text-decoration: none;
+}
 /* -----------------------------------------------  INDEX.HTML  ----------------------------------------------------------- */
 
 /* -----------------------------------------------  NAVBAR  --------------------------------------------------------------- */
@@ -94,15 +97,12 @@ section div {
     background-color: #F6E3A6;
     display: inline-block;
     padding-top: 3.5rem;
-    /* min-width: 400px; */
 }
 
 #pixer-img{
     max-width: 100%;
     height: auto;
     max-height: 400px;
-    padding-left: 5rem;
-    min-width: 292px;
 }
 
 .third-project{
@@ -116,8 +116,6 @@ section div {
     max-width: 100%;
     height: auto;
     max-height: 400px;
-    padding-left: 5rem;
-
 }
 
 
@@ -258,21 +256,17 @@ footer p{
         padding-bottom: 5rem;
         margin: auto;
         margin-bottom: 5rem;
+        margin-top: 5rem;
 }
 #links col{
     align-items: center;
 }
 .link-img{
     max-height: 20rem;
+    margin-top: 1rem;
 }
 #links p strong {
     font-size: 12pt;
-    font-family: 'roboto';
+    font-family: 'krona one', sans-serif;
     color: #504f4f;
-}
-.pixer-link-text{
-    margin-left: -5.5rem;
-}
-a{
-    text-decoration: none;
 }
