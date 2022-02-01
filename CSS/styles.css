@@ -4,45 +4,17 @@ body{
     padding-top: 7rem;
 }
 
-/* -----------------------------------------------HEADER----------------------------------------------------------- */
-/* header {
-    display: block;
-    overflow: hidden;
-    margin-top: 50px;
+ul {
+    list-style-type: none;
 }
-.header-img {
+/* -----------------------------------------------  INDEX.HTML  ----------------------------------------------------------- */
 
-    width: 85px;
-}
-header img {
-    display: block;
-    width: 85px;
-    float: left;
-}
-.header-heading {
-    display: block;
-    margin: 0px auto 0px auto;
-    max-width: 600px;
-}
-.header-heading h1 {
-    font-family: 'Krona One', sans-serif; 
-    font-size: 62px;
-    font-weight: 900;
-    text-transform: uppercase;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin: 0px;
-    text-align: center;
-    color: rgb(255, 87, 88);
-    line-height: 1;
-} */
-
-/* ------------------------------------------NAVBAR---------------------------------------------- */
+/* -----------------------------------------------  NAVBAR  --------------------------------------------------------------- */
 .navbar{
-    background-color: rgba(7, 82, 196, 0.75);
+    background-color: rgba(45, 105, 195, 0.75);
 }
 nav a {
-    font-family: 'Krona One', cursive;
+    font-family: 'Krona One';
     font-size: 10pt;
     text-decoration: none;
     color: #fdfdfd !important;
@@ -62,7 +34,7 @@ nav a {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* --------------------------------------   Nedan kommer content ---------------------------------------------- */
+/* ---------------------------------------------   CONTENT ---------------------------------------------- */
 
 section {   
     text-align: center;
@@ -70,10 +42,13 @@ section {
 section div {
     height: auto;
 }
-#introduction .row, #projects .row{
+
+
+#introduction .row, .last-projects{
     border-bottom: 1px solid rgb(82, 78, 78);
     padding-bottom: 5rem;
-    margin: 4rem auto;
+    margin: auto;
+    margin-bottom: 3rem;
 }
 
 .col {
@@ -83,43 +58,26 @@ section div {
 }
 
 .big-text {
-    font-family: 'cormorant', cursive;
-    color: #636363;
+    font-family: 'cormorant';
+    color: #504f4f;
     margin-top: 10px;
     font-size: 36pt;
     font-weight: bold;
+    animation: fadeIn;
+    animation-duration: 3s;
 }
 
-
-.big-text p{
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 3.5s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
-
 #profile-img{
-    height: 300px;
+    max-height: 300px;
+}
+
+#projects .row a {
+    display: inherit;
+    text-decoration: none;
 }
 
 .first-project {
-    background-color: #289d57a6;
+    background-color: #a0ddb8;
     padding-top: 7rem;
     justify-content: center;
     display: inline-block;
@@ -136,7 +94,7 @@ section div {
     background-color: #F6E3A6;
     display: inline-block;
     padding-top: 3.5rem;
-    min-width: 400px;
+    /* min-width: 400px; */
 }
 
 #pixer-img{
@@ -144,6 +102,7 @@ section div {
     height: auto;
     max-height: 400px;
     padding-left: 5rem;
+    min-width: 292px;
 }
 
 .third-project{
@@ -163,8 +122,8 @@ section div {
 
 
 .project.big-text {
-    font-family: 'cormorant', cursive;
-    color: #636363;
+    font-family: 'cormorant';
+    color: #504f4f;
     margin-top: 10px;
     font-size: 36pt;
     font-weight: bold;
@@ -173,44 +132,57 @@ section div {
 
 p.ingress-text {
     font-size: 12pt;
-    color: #636363;
+    color: #504f4f;
 }
-
-/* .thaiNoodles-img {
-    animation: bounce;
-    animation-duration: 2s;
+.linkedin-img {
+    max-height: 2rem;
+    min-height: 1.5rem;
+    margin-top:-5px;
 }
-
-.spicyShrimp-img {
-    animation: flash;
-    animation-duration: 2s;
-    animation-delay: 3s;
-}
-
-.mortar-img {
-    animation: rubberBand;
-    animation-duration: 2s;
-    animation-delay: 6s;
-}
-
-.carvedFruit-img {
-    animation: swing;
-    animation-duration: 2s;
-    animation-delay: 9s;
-} */
-
 
 #contactForm{
-    max-width: 50rem;
-    margin: 4rem auto;
-
+    min-width: 300px;
+    width: 100%;   
+}
+#submitButton{
+    background-color: #24a657;
+    border-color: #24a657;
 }
 
-/* --------------------------------------   Nedan kommer footer   ---------------------------------------------- */
+#about, #resume {
+    text-align: left;
+    color: #504f4f;
+}
+
+h1 {
+    font-family: 'cormorant';
+    color: #504f4f;
+    margin-top: 10px;
+    font-size: 24pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    font-size: 16pt;
+}
+
+#resume p {
+    font-size: 12pt;
+}
+
+#resume p strong {
+    font-size: 10pt;
+    font-family: 'Krona One';
+}
+
+
+/* --------------------------------------   FOOTER  ---------------------------------------------- */
 
 footer {
-    background-color:rgba(7, 82, 196, 0.75);
-    /* margin-top: 30px; */
+    background-color: rgba(45, 105, 195, 0.75);
+    margin-top: 7rem;
     text-align: center;
     font-size: 10pt;
     font-weight: lighter;
@@ -219,4 +191,88 @@ footer p{
     margin-bottom: 0;
     padding: 1rem;
     color: #fdfdfd;
+}
+
+
+/* --------------------------------------   CAROUSEL  ---------------------------------------------- */
+
+.carousel-control-next span, .carousel-control-prev span{
+    background-color: #504f4f;
+}
+.carousel{
+    margin-bottom: 5rem;
+}
+
+.placeholder-img{
+    max-width: 20rem;
+}
+.example-imgs{
+    margin-bottom: 5rem;
+}
+#introduction-project p{
+    font-family: 'roboto';
+    color: #504f4f;
+}
+#process {
+    text-align: left;
+    color: #504f4f;
+    margin-top: 5rem;
+}
+#process .row{
+    justify-content: center;
+    align-items: center;
+}
+#process article{
+    border-bottom: 1px solid rgb(82, 78, 78);
+    padding-bottom: 1rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+#process h1 {
+    font-family: 'cormorant';
+    color: #504f4f;
+    margin-top: 10px;
+    font-size: 24pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+#process p {
+    font-size: 10pt;
+    font-family: 'roboto', sans-serif;
+    color: #504f4f;
+}
+
+#process p strong {
+    font-size: 12pt;
+    font-family: 'roboto', sans-serif;
+    color: #504f4f;
+}
+#process p em{
+    font-size: 12pt;
+    font-family: 'roboto';
+}
+#links .row{
+        border-bottom: 1px solid rgb(82, 78, 78);
+        padding-bottom: 5rem;
+        margin: auto;
+        margin-bottom: 5rem;
+}
+#links col{
+    align-items: center;
+}
+.link-img{
+    max-height: 20rem;
+}
+#links p strong {
+    font-size: 12pt;
+    font-family: 'roboto';
+    color: #504f4f;
+}
+.pixer-link-text{
+    margin-left: -5.5rem;
+}
+a{
+    text-decoration: none;
 }
