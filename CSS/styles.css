@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Belleza&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Federo&family=Gloria+Hallelujah&family=Italiana&family=Krona+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Permanent+Marker&family=Rock+Salt&display=swap');
+
+body{
+    padding-top: 7rem;
+}
+
+ul {
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+/* -----------------------------------------------  INDEX.HTML  ----------------------------------------------------------- */
+
+/* -----------------------------------------------  NAVBAR  --------------------------------------------------------------- */
+.navbar{
+    background-color: rgba(45, 105, 195, 0.75);
+}
+nav a {
+    font-family: 'Krona One';
+    font-size: 10pt;
+    text-decoration: none;
+    color: #fdfdfd !important;
+}
+  .navbar .navbar-collapse {
+    text-align: end;
+  }
+.nav-link{
+    padding: 1rem;
+}
+
+.navbar-toggler {
+    border: 0px;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---------------------------------------------   CONTENT ---------------------------------------------- */
+
+section {   
+    text-align: center;
+}
+section div {
+    height: auto;
+}
+
+
+#introduction .row, .last-projects{
+    border-bottom: 1px solid rgb(82, 78, 78);
+    padding-bottom: 5rem;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+
+.col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big-text {
+    font-family: 'cormorant';
+    color: #504f4f;
+    margin-top: 10px;
+    font-size: 36pt;
+    font-weight: bold;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+#profile-img{
+    max-height: 300px;
+}
+
+#projects .row a {
+    display: inherit;
+    text-decoration: none;
+}
+
+.first-project {
+    background-color: #a0ddb8;
+    padding-top: 7rem;
+    justify-content: center;
+    display: inline-block;
+    margin-bottom: 3rem;
+}
+
+#koket-img{
+    height: auto;
+    width: 824px;
+    max-width: 100%;
+}
+
+.second-project{
+    background-color: #F6E3A6;
+    display: inline-block;
+    padding-top: 3.5rem;
+}
+
+#pixer-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.third-project{
+    background-color: #F1DDDD;
+    display: inline-block;
+    padding-top: 3.5rem;
+
+}
+
+#kvittisar-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+
+.project.big-text {
+    font-family: 'cormorant';
+    color: #504f4f;
+    margin-top: 10px;
+    font-size: 36pt;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p.ingress-text {
+    font-size: 12pt;
+    color: #504f4f;
+}
+.linkedin-img {
+    max-height: 2rem;
+    min-height: 1.5rem;
+    margin-top:-5px;
+}
+
+#contactForm{
+    min-width: 300px;
+    width: 100%;   
+}
+#submitButton{
+    background-color: #24a657;
+    border-color: #24a657;
+}
+
+#about, #resume {
+    text-align: left;
+    color: #504f4f;
+}
+
+h1 {
+    font-family: 'cormorant';
+    color: #504f4f;
+    margin-top: 10px;
+    font-size: 24pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+
+#about p {
+    font-size: 16pt;
+}
+
+#resume p {
+    font-size: 12pt;
+}
+
+#resume p strong {
+    font-size: 10pt;
+    font-family: 'Krona One';
+}
+
+
+/* --------------------------------------   FOOTER  ---------------------------------------------- */
+
+footer {
+    background-color: rgba(45, 105, 195, 0.75);
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 10pt;
+    font-weight: lighter;
+}
+footer p{
+    margin-bottom: 0;
+    padding: 1rem;
+    color: #fdfdfd;
+}
+
+
+/* --------------------------------------   CAROUSEL  ---------------------------------------------- */
+
+.carousel-control-next span, .carousel-control-prev span{
+    background-color: #504f4f;
+}
+.carousel{
+    margin-bottom: 5rem;
+}
+
+.placeholder-img{
+    max-width: 20rem;
+}
+.example-imgs{
+    margin-bottom: 5rem;
+}
+#introduction-project p{
+    font-family: 'roboto';
+    color: #504f4f;
+}
+#process {
+    text-align: left;
+    color: #504f4f;
+    margin-top: 5rem;
+}
+#process .row{
+    justify-content: center;
+    align-items: center;
+}
+#process article{
+    border-bottom: 1px solid rgb(82, 78, 78);
+    padding-bottom: 1rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}
+
+#process h1 {
+    font-family: 'cormorant';
+    color: #504f4f;
+    margin-top: 10px;
+    font-size: 24pt;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+}
+#process p {
+    font-size: 10pt;
+    font-family: 'roboto', sans-serif;
+    color: #504f4f;
+}
+
+#process p strong {
+    font-size: 12pt;
+    font-family: 'roboto', sans-serif;
+    color: #504f4f;
+}
+#process p em{
+    font-size: 12pt;
+    font-family: 'roboto';
+}
+#links .row{
+        border-bottom: 1px solid rgb(82, 78, 78);
+        padding-bottom: 5rem;
+        margin: auto;
+        margin-bottom: 5rem;
+        margin-top: 5rem;
+}
+#links col{
+    align-items: center;
+}
+.link-img{
+    max-height: 20rem;
+    margin-top: 1rem;
+}
+#links p strong {
+    font-size: 12pt;
+    font-family: 'krona one', sans-serif;
+    color: #504f4f;
+}
